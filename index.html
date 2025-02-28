@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRU Cache Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>LRU Cache Visualizer</h1>
+    <div class="controls">
+        <input type="number" id="putKey" placeholder="Key (Put)">
+        <input type="number" id="putValue" placeholder="Value (Put)">
+        <button onclick="handlePut()">Put</button>
+    </div>
+    <div class="controls">
+        <input type="number" id="getKey" placeholder="Key (Get)">
+        <button onclick="handleGet()">Get</button>
+    </div>
+    <div id="cache" class="cache"></div>
+    <script src="lruCache.js"></script>
+</body>
+</html>
